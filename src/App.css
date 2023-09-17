@@ -1,0 +1,186 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.home {
+  width: 70%;
+}
+
+  .upper-right {
+    position: fixed; /* Change to fixed position */
+    top: 20px; /* Adjust the top value as needed */
+    right: 20px; /* Adjust the right value as needed */
+    border-radius: 50%;
+    background-color: #ffe247;
+    filter: blur(200px); /* Reduce the blur value as needed */
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    z-index: -10; /* Set a high z-index to ensure it's above other content */
+  }
+
+/* HOME */
+.home-heading {
+  font-size: 3.3rem;
+  margin: 0 auto;
+  font-weight: 500;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+.tag {
+  font-size: 2.7rem;
+  padding: 0;
+  margin: 0 auto 10px auto;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.tagline {
+  border: 1px solid black;
+  width: 250px;
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+.preface {
+  margin-top: 50px;
+  font-size: 1.125rem;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  font-weight: 100;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.main-btn{
+  background: none;
+  border: 1px solid black;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+}
+
+.main-btn:hover {
+  cursor: pointer;
+}
+
+
+.line {
+  width: 50px;
+  border: 1px solid black;
+  margin: 2px;
+}
+
+#resume {
+  width: 217px;
+}
+
+#resume:hover .line:nth-child(1){
+  transform: rotate(40deg);
+  width: 22px;
+  transition: 0.3s ease-in-out;
+  margin: 0;
+}
+
+#resume:hover .line:nth-child(3){
+  transform: rotate(-40deg);
+  width: 22px;
+  transition: 0.3s ease-in-out;
+  margin: 0;
+}
+
+#connect {
+  width: 500px;
+}
+
+.sideline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 50px;
+  height: 20px;
+  transition:  1s ease-in-out;
+  overflow: hidden;
+}
+
+.sideline-internal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in-out;
+}
+
+.icons {
+  display: none;
+  padding: 0;
+  margin: 0;
+  font-size: 22px; /* Set the desired font size */
+  height: 22px;
+}
+
+#connect:hover .sideline {
+  width: 300px;
+  height: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: width 1s ease-in-out;
+}
+
+#connect:hover .sideline-internal {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#connect:hover .line{
+  transform: rotate(-90deg);
+  transition: transform 1s ease-in-out, width 1s ease-in-out;
+  width: 20px;
+  margin: 2px 0;
+}
+
+#connect:hover .icons {
+  display: inline;
+  transition: 1s ease-in-out;
+}
+
+.lower-left{
+  position: fixed; /* Change to fixed position */
+    bottom: 10px; /* Adjust the top value as needed */
+    left: 10px; /* Adjust the right value as needed */
+    border-radius: 50%;
+    background-color: #5205A0;
+    filter: blur(200px); /* Reduce the blur value as needed */
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    z-index: -10;
+}
