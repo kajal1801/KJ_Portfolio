@@ -22,14 +22,15 @@ a{
 
 #navbar{
   position: absolute;
-  height: 100px;
+  height: 70px;
   border-bottom: 1px solid #000;
   width: 100%;
   z-index: 10;
 }
 
 .navbar-content{
-  height: 100px;
+  /* padding: 0 1.125rem; */
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,17 +44,18 @@ a{
 
 #username {
   font-size: 1.5rem;
-  margin-left: 20px;
+  min-width: 300px;
+  text-align: center;
   font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
 
 .nav-menu {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
 
 .nav-menu a{
-  margin: 20px;
+  margin: 15px;
 }
 
 .nav-menu a:hover{
@@ -61,7 +63,26 @@ a{
 }
 
 .nav-btn{
-  margin-right: 20px;
+  margin: 20px 100px 0 0;
+}
+
+#nav-connect {
+  font-size: 1.125rem;
+  width: 217px;
+}
+
+#nav-connect:hover .line:nth-child(1){
+  transform: rotate(40deg);
+  width: 22px;
+  transition: 0.3s ease-in-out;
+  margin: 0;
+}
+
+#nav-connect:hover .line:nth-child(3){
+  transform: rotate(-40deg);
+  width: 22px;
+  transition: 0.3s ease-in-out;
+  margin: 0;
 }
 
 .hover-underline-animation{
@@ -96,25 +117,16 @@ a{
 }
 
 .home-content {
-  width: 70%;
+  margin-top: 100px;
+  width: 50%;
+  margin-right: 40px;
 }
 
-  .upper-right {
-    position: fixed; /* Change to fixed position */
-    top: 20px; /* Adjust the top value as needed */
-    right: 20px; /* Adjust the right value as needed */
-    border-radius: 50%;
-    background-color: #ffe247;
-    filter: blur(200px); /* Reduce the blur value as needed */
-    width: 400px; /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
-    z-index: -10; /* Set a high z-index to ensure it's above other content */
-  }
 
 /* HOME */
 .home-heading {
   font-size: 4rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   font-weight: 500;
   font-family: 'Playfair Diaplay', serif;
 }
@@ -124,6 +136,8 @@ a{
   padding: 0;
   margin: 0 auto 10px auto;
   font-family: 'Playfair Display', serif;
+  text-align: left;
+  /* margin-left: 50px; */
 }
 
 #and {
@@ -133,15 +147,17 @@ a{
 }
 
 .preface {
-  margin: 50px 50px 0 50px;
+  margin: 0 50px 0 0;
   font-size: 1.125rem;
   font-family: 'Playfair Display', sans-serif;
   font-weight: 100;
+  text-align: left;
 }
 
 .btn-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-top: 50px;
 }
@@ -154,6 +170,7 @@ a{
   justify-content: space-between;
   padding: 10px 20px;
   font-size: 1.125rem;
+  margin-bottom: 1.25rem;
 }
 
 .main-btn:hover {
@@ -165,6 +182,7 @@ a{
   width: 50px;
   border: 1px solid black;
   margin: 2px;
+  transition: 0.3s ease-in-out;
 }
 
 #resume {
@@ -214,6 +232,7 @@ a{
   margin: 0;
   font-size: 22px; /* Set the desired font size */
   height: 22px;
+  transition: 1s ease-in-out;
 }
 
 #connect:hover .sideline {
@@ -229,6 +248,7 @@ a{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease-in-out;
 }
 
 #connect:hover .line{
@@ -243,16 +263,52 @@ a{
   transition: 1s ease-in-out;
 }
 
+
+.upper-right {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  background-color: #f61576;
+  filter: blur(300px);
+  width: 500px;
+  height: 400px;
+  z-index: -10;
+}
+
 .lower-left{
     position: fixed; 
-    display: block;
-    left: 0;
-    bottom: -100px; 
-    margin: 0 auto;
-    border-radius: 70%;
-    background-color: #5205A0;
-    filter: blur(200px); 
-    width: 100%; 
-    height: 300px;
+    /* display: block; */
+    left: 20px;
+    bottom: -70px; 
+    margin: 0;
+    border-radius: 50%;
+    background-color: #511bda;
+    filter: blur(300px); 
+    width: 500px; 
+    height: 400px;
     z-index: -10;
+}
+
+.image-container{
+  border: 2px solid black;
+  border-radius: 3px;
+  height: 400px;
+  width: 300px;
+  position: relative;
+}
+
+.kajal {
+  margin: 15px 0 0 15px;
+  border-radius: 3px;
+  left: 0;
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.kajal:hover {
+  margin: 0;
+  transition: 0.5s ease-in-out;
 }
